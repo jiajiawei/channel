@@ -17,9 +17,9 @@
 .runwayTit{ width: 343px; height: 80px; margin: 56px auto 0;}
 
 /*秀场直击*/
-{ height: 853px;}
-
-
+.runwayWrapper{ height: 853px; margin-top: 60px;}
+.runway{ margin: 0 auto;}
+.runway .swiper-container {} 
 
 
 

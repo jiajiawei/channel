@@ -9,6 +9,43 @@
 		<link type="text/css" rel="stylesheet" href="http://js.selfimg.com.cn/lib/share/1.0.0/share.css"/>
 		<link type="text/css" rel="stylesheet" href="css/channel.css"/>
 		<script src="http://js.selfimg.com.cn/??jquery/jquery-1.7.1.min.js,seajs/seajs/2.1.1/sea.js,seajs/seajs-combo/1.0.1/seajs-combo.js,lib/share/1.0.0/share.js"></script>		
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<style>
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: 200px;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
 		<!--[if lte IE 9]>
 	    <style type="text/css">
 	    	.celebsName,.celebsBlack{ opacity:1;}
@@ -213,8 +250,26 @@
 </div>
 
 <!--秀场直击-->
-<div class="">
-	
+<div class="runwayWrapper">
+	<div class="runway">
+		<div class="swiper-container">
+		    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">Slide 1</div>
+	            <div class="swiper-slide">Slide 2</div>
+	            <div class="swiper-slide">Slide 3</div>
+	            <div class="swiper-slide">Slide 4</div>
+	            <div class="swiper-slide">Slide 5</div>
+	            <div class="swiper-slide">Slide 6</div>
+	            <div class="swiper-slide">Slide 7</div>
+	            <div class="swiper-slide">Slide 8</div>
+	            <div class="swiper-slide">Slide 9</div>
+	            <div class="swiper-slide">Slide 10</div>
+	        </div>
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		</div>
+	</div>
 </div>
 
 
@@ -312,6 +367,23 @@
 		</div>
 	</div>
 </div>
+
+
+<script src="js/swiper.jquery.min.js"></script>
+<!--秀场直击-->
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+  	direction: 'vertical',
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    slidesPerView: 5,
+    slidesPerColumn: 2,
+  })        
+  </script>
+
+
+
 <script type="text/javascript">
 	seajs.config({
 		"base": "http://js.selfimg.com.cn/",
