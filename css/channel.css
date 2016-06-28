@@ -24,12 +24,38 @@
 /*3秒读懂*/
 .threesecWrapper{ height: 539px; background: url(../images/threeSecbg.jpg) no-repeat center 0;}
 .threeSec{ width: 1300px; padding: 40px 0 0 86px; box-sizing: border-box;}
-.threeSectext{ width: 423px; margin: 56px 155px 25px 0;}
+.threeSectext{ float: left; width: 423px; margin: 56px 155px 25px 0;}
 .threeSectext h2{ margin-bottom: 22px;}
 .threeSectext p{ font-size: 16px; line-height: 31px;}
 .threeSectext a:link,.threeSectext a:visited{ display: block; width:103px; height:35px; line-height: 35px; background: #fff; font-size: 16px; color: #000; text-align: center;}
 .threeSectext a:hover{ color: #e60012;}
-.threeSec 
+.threeSec ul{ float: left; width: 618px;}
+.threeSec ul li{ float: left; width: 223px; height: 223px; position: relative; margin: 0 20px 20px 0;}
+.threeSec ul .firLi{ width: 350px; height: 468px;}
+.threeSec ul span{ position: absolute; top: 10px; right: -5px; display: block; padding: 0 20px; height: 36px; line-height: 36px; font-size: 19px; background: #fff;}
+.threeSec ul li a{ color: #000;}
+
+/*经常回顾*/
+.highLights{ width: 1300px; height: ; margin: 115px auto 80px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
