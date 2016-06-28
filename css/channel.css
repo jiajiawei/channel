@@ -14,14 +14,22 @@
 .celebs li:hover .celebsBlack{ opacity: 1;}
 .celebsName{ position: absolute; z-index: 2; width: 260px; height: 70px; top: 164px; background: url(../images/celebsNamebg.png) repeat 0 0; line-height: 70px; text-align: center; color: #fff; font-size: 25px; opacity: 0; transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s;}
 .celebs li:hover .celebsName{ opacity: 1;}
-.runwayTit{ width: 343px; height: 80px; margin: 56px auto 0;}
+.celebsWrapper h2{ width: 343px; height: 80px; margin: 56px auto 0;}
 
 /*秀场直击*/
 .runwayWrapper{ height: 853px; margin-top: 60px;}
 .runway{ margin: 0 auto;}
 .runway .swiper-container {} 
 
-
+/*3秒读懂*/
+.threesecWrapper{ height: 539px; background: url(../images/threeSecbg.jpg) no-repeat center 0;}
+.threeSec{ width: 1300px; padding: 40px 0 0 86px; box-sizing: border-box;}
+.threeSectext{ width: 423px; margin: 56px 155px 25px 0;}
+.threeSectext h2{ margin-bottom: 22px;}
+.threeSectext p{ font-size: 16px; line-height: 31px;}
+.threeSectext a:link,.threeSectext a:visited{ display: block; width:103px; height:35px; line-height: 35px; background: #fff; font-size: 16px; color: #000; text-align: center;}
+.threeSectext a:hover{ color: #e60012;}
+.threeSec 
 
 
 
