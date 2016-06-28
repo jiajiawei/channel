@@ -1,0 +1,26 @@
+/*banner*/
+.bannerWrapper{ height: 1224px; background: url(../images/bannerBg.jpg) no-repeat center 0; overflow: hidden;}
+.banner{ width: 1300px; margin: 0 auto;}
+.channelTit{ width: 403px; height: 190px; margin: 53px auto 67px;}
+.bannerAd{ width: 1300px; height: 732px; overflow: hidden;}
+.celebsTit{ width: 344px; height: 81px; margin: 50px auto 0;}
+
+/*名流云集*/
+.celebsWrapper{ max-height: 1762px; background: url(../images/celebsBg.jpg) no-repeat center 0;}
+.celebs{ width: 1300px; overflow: hidden; margin: 40px auto 55px;}
+.celebs li{ float: left;}
+.celebs li a{ width: 223px; height: 396px; display: block; overflow: hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
