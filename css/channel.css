@@ -6,16 +6,18 @@
 .celebsTit{ width: 344px; height: 81px; margin: 50px auto 0;}
 
 /*名流云集*/
-.celebsWrapper{ max-height: 1762px; background: url(../images/celebsBg.jpg) no-repeat center 0;}
+.celebsWrapper{ max-height: 1762px; background: url(../images/celebsBg.jpg) no-repeat center 0; overflow: hidden;}
 .celebs{ width: 1300px; overflow: hidden; margin: 40px auto 55px;}
-.celebs li{ float: left;}
-.celebs li a{ width: 223px; height: 396px; display: block; overflow: hidden;}
+.celebs li{ float: left; position: relative;}
+.celebs li a{ width: 260px; height: 396px; display: block; overflow: hidden;}
+.celebsBlack{ position: absolute; top: 0; left: 0; width: 260px; height: 396px; z-index: 1; background: url(../images/celebsBlack.png) repeat 0 0; opacity: 0; transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s;}
+.celebs li:hover .celebsBlack{ opacity: 1;}
+.celebsName{ position: absolute; z-index: 2; width: 260px; height: 70px; top: 164px; background: url(../images/celebsNamebg.png) repeat 0 0; line-height: 70px; text-align: center; color: #fff; font-size: 25px; opacity: 0; transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s;}
+.celebs li:hover .celebsName{ opacity: 1;}
+.runwayTit{ width: 343px; height: 80px; margin: 56px auto 0;}
 
-
-
-
-
-
+/*秀场直击*/
+{ height: 853px;}
 
 
 
