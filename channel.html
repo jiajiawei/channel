@@ -288,6 +288,63 @@
 <div class="fitingWrapper">
 	<div class="fiting">
 		<h2><img src="images/fittingTit.gif" width="343" height="81"></h2>
+		<p class="swiper-pagination"></p>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<div class="fittingL"><img src="images/fittingL.jpg" width="415" height="739"></div>
+		        	<div class="fittingC">
+		        		<img src="images/fittingC1.jpg" width="355" height="355">
+		        		<img src="images/fittingC2.jpg" width="355" height="355">
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="fittingL"><img src="images/fittingL.jpg" width="415" height="739"></div>
+		        	<div class="fittingC">
+		        		<img src="images/fittingC1.jpg" width="355" height="355">
+		        		<img src="images/fittingC2.jpg" width="355" height="355">
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="fittingL"><img src="images/fittingL.jpg" width="415" height="739"></div>
+		        	<div class="fittingC">
+		        		<img src="images/fittingC1.jpg" width="355" height="355">
+		        		<img src="images/fittingC2.jpg" width="355" height="355">
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="fittingL"><img src="images/fittingL.jpg" width="415" height="739"></div>
+		        	<div class="fittingC">
+		        		<img src="images/fittingC1.jpg" width="355" height="355">
+		        		<img src="images/fittingC2.jpg" width="355" height="355">
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="fittingL"><img src="images/fittingL.jpg" width="415" height="739"></div>
+		        	<div class="fittingC">
+		        		<img src="images/fittingC1.jpg" width="355" height="355">
+		        		<img src="images/fittingC2.jpg" width="355" height="355">
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="fittingL"><img src="images/fittingL.jpg" width="415" height="739"></div>
+		        	<div class="fittingC">
+		        		<img src="images/fittingC1.jpg" width="355" height="355">
+		        		<img src="images/fittingC2.jpg" width="355" height="355">
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="fittingL"><img src="images/fittingL.jpg" width="415" height="739"></div>
+		        	<div class="fittingC">
+		        		<img src="images/fittingC1.jpg" width="355" height="355">
+		        		<img src="images/fittingC2.jpg" width="355" height="355">
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="swiper-button-prev"></div>
+    		<div class="swiper-button-next"></div>
+		</div>
+		
 		<h2><img src="images/vogueQa.gif" width="343" height="81"></h2>
 	</div>
 </div>
@@ -453,14 +510,21 @@
 <script type="text/javascript" src="js/channel.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
 <!--秀场直击-->
-<script>        
-  var mySwiper = new Swiper ('.swiper-container', {
+<script>
+  var names = ['欧阳娜娜','蒋劲夫','白百何','周迅','李宇春','陈伟霆','马思纯'];
+  var mySwiper = new Swiper('.fiting .swiper-container', {
+  	loop: true,
   	direction: 'vertical',
-    loop: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    slidesPerView: 5,
-    slidesPerColumn: 2,
+    pagination: '.swiper-pagination',
+    initialSlide: 3,
+    paginationClickable: true,
+    paginationBulletRender: function (index, className) {
+      return '<span class="' + className + '">' + names[index] + '</span>';
+  	}
+//  slidesPerView: 5,
+//  slidesPerColumn: 2,
   })        
   </script>
 
