@@ -10,6 +10,7 @@
 .celebs{ width: 1300px; overflow: hidden; margin: 40px auto 55px;}
 .celebs li{ float: left; position: relative;}
 .celebs li a{ width: 260px; height: 396px; display: block; overflow: hidden;}
+.celebs li a img{ display: block; width: 260px; height: 396px;}
 .celebsBlack{ position: absolute; top: 0; left: 0; width: 260px; height: 396px; z-index: 1; background: url(../images/celebsBlack.png) repeat 0 0; opacity: 0; transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s;}
 .celebs li:hover .celebsBlack{ opacity: 1;}
 .celebsName{ position: absolute; z-index: 2; width: 260px; height: 70px; top: 164px; background: url(../images/celebsNamebg.png) repeat 0 0; line-height: 70px; text-align: center; color: #fff; font-size: 25px; opacity: 0; transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s;}
@@ -25,22 +26,74 @@
 .threesecWrapper{ height: 539px; background: url(../images/threeSecbg.jpg) no-repeat center 0;}
 .threeSec{ width: 1300px; padding: 40px 0 0 86px; box-sizing: border-box;}
 .threeSectext{ float: left; width: 423px; margin: 56px 155px 25px 0;}
+.threeSectext img{ display: block; width: 423px; height: 85px;}
 .threeSectext h2{ margin-bottom: 22px;}
 .threeSectext p{ font-size: 16px; line-height: 31px;}
-.threeSectext a:link,.threeSectext a:visited{ display: block; width:103px; height:35px; line-height: 35px; background: #fff; font-size: 16px; color: #000; text-align: center;}
+.threeSectext a:link,.threeSectext a:visited{ display: block; width:103px; height:35px; line-height: 35px; margin-top: 25px; background: #fff; font-size: 16px; color: #000; text-align: center;}
 .threeSectext a:hover{ color: #e60012;}
 .threeSec ul{ float: left; width: 618px;}
 .threeSec ul li{ float: left; width: 223px; height: 223px; position: relative; margin: 0 20px 20px 0;}
+.threeSec ul li img{ display: block; width: 223px; height: 223px;}
 .threeSec ul .firLi{ width: 350px; height: 468px;}
+.threeSec ul .firLi img{ width: 350px; height: 468px;}
 .threeSec ul span{ position: absolute; top: 10px; right: -5px; display: block; padding: 0 20px; height: 36px; line-height: 36px; font-size: 19px; background: #fff;}
 .threeSec ul li a{ color: #000;}
 
 /*经常回顾*/
-.highLights{ width: 1300px; height: ; margin: 115px auto 80px;}
+.highLightswrapper{ width: 1300px; height: 586px; margin: 115px 0 80px 103px; _display:inline;}
+.highLights{ position: relative; width: 1010px; height: 586px; padding-left: 55px; background: url(../images/highLightbg.jpg) no-repeat 0 0;}
+.highLights a{ display: block; width: 1063px; height: 586px;}
+.highLights a img{ display: block; width:971px; height: 532px;}
+.highLights div{ position: absolute; left: 55px; bottom: 54px; color: #fff; width: 971px; height: 120px; padding: 30px 30px 0; box-sizing: border-box; background: url(../images/highBlack.png) repeat 0 0;}
+.highLights div h3{ font-size: 30px; margin-bottom: 18px; font-weight: normal;}
+.highLights div p{ font-size: 16px;}
+.playBtn{ display: block; position: absolute; cursor: pointer; width: 97px; height: 97px; top: 170px; left: 500px; background: url(../images/arrow.png) no-repeat -170px 0;}
+.highLights:hover .playBtn,.vogueQa div:hover .playBtn{ background-position: -170px -97px;}
+.highLights em{ width:108px; height: 32px; background: #000; line-height: 32px; color: #fff; font-size: 15px; text-align: center; position: absolute; top: 30px; right: -28px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px;}
 
+/*明星试装*/
+.fitingWrapper{ height: 1277px; background: url(../images/fittingBg.jpg) no-repeat center 0;}
+.fiting{ width: 1300px; margin: 0 auto; padding-top: 70px;}
+.fiting h2{ width: 343px; height: 81px; margin: 0 auto;}
 
+/*快问快答*/
+.vogueQa{ position: relative; width: 1300px; height: 469px; margin: 60px auto 50px;}
+.vogueQa div{ position: relative; width: 832px; height: 469px;}
+.vogueQa div a{ display: block; width: 832px; height: 469px;}
+.vogueQa div .playBtn{ top: 160px; left: 350px;}
+.vogueQa ul{position: absolute; top: 26px; left: 770px; width: 528px; overflow: hidden;}
+.vogueQa ul li{ float: left; width: 263px; height: 179px; background: #f0f0f0; padding: 12px 16px; margin: 0 1px 1px 0; box-sizing: border-box;}
+.vogueQa ul li span{ display: block; width: 70px; height: 26px; line-height: 26px; font-family: "microsoft yahei"; background: #e60012; color: #fff; font-size: 15px; text-align: center; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px;}
+.vogueQa ul li h3{ font-size: 20px; margin: 5px 0 10px;}
+.vogueQa ul li h3.higherLitit{ margin-bottom: 30px;}
+.vogueQa ul li p{ font-size: 16px; line-height: 30px;}
+.vogueQa ul li.higherLi{ height: 238px;}
+.vogueQa ul li p img{ position: relative; top: 3px;}
 
+ /*秀后派对*/
+.afterPartywrapper{ height: 811px; margin-bottom: 5px solid #e60013; background: url(../images/afterPartybg.jpg) no-repeat center 0;}
+.afterParty{ width: 1300px; margin: 0 auto; overflow: hidden;}
+.afterParty h2{ width: 343px; height: 81px; margin: 50px auto;}
 
+.street-tab,
+.street-content{
+	position: relative;
+	height: 690px;
+	overflow: hidden;
+}
+.street-tab .abs-tab{
+	position: absolute;
+}
+.street-tab a{
+	position: relative;
+	display: block;
+	float: left;
+	height: 690px;
+}
+.street-tab img{
+	display: block;
+	height: 690px;
+}
 
 
 
