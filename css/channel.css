@@ -18,9 +18,16 @@
 .celebsWrapper h2{ width: 343px; height: 80px; margin: 56px auto 0;}
 
 /*秀场直击*/
-.runwayWrapper{ height: 853px; margin-top: 60px;}
-.runway{ margin: 0 auto;}
-.runway .swiper-container {} 
+.runwayWrapper{ height: 792px; margin-top: 60px;}
+.runway{ width: 1431px; margin: 0 auto; position: relative;}
+.runway .swiper-container { width: 1300px;} 
+.runway .swiper-container li{ float: left;}
+.runway .swiper-container li img{ display: block; width: 260px; height: 396px;}
+.runway .swiper-button-prev,.runway .swiper-button-next{ width: 85px; height: 110px; background: url(../images/arrow.png) no-repeat 0 0; margin-top: -55px;}
+.runway .swiper-button-prev{ background-position: 0 0; left: -65px;}
+.runway .swiper-button-prev:hover{ background-position: 0 -110px;}
+.runway .swiper-button-next{ background-position: -85px 0; right: -65px;}
+.runway .swiper-button-next:hover{ background-position: -85px -110px;}
 
 /*3秒读懂*/
 .threesecWrapper{ height: 539px; background: url(../images/threeSecbg.jpg) no-repeat center 0;}
@@ -40,13 +47,13 @@
 .threeSec ul li a{ color: #000;}
 
 /*经常回顾*/
-.highLightswrapper{ width: 1300px; height: 586px; margin: 115px 0 80px 103px; _display:inline;}
+.highLightswrapper{ width: 1300px; height: 586px; margin: 115px auto 80px; padding-left: 103px; box-sizing: border-box;}
 .highLights{ position: relative; width: 1010px; height: 586px; padding-left: 55px; background: url(../images/highLightbg.jpg) no-repeat 0 0;}
 .highLights a{ display: block; width: 1063px; height: 586px;}
 .highLights a img{ display: block; width:971px; height: 532px;}
 .highLights div{ position: absolute; left: 55px; bottom: 54px; color: #fff; width: 971px; height: 120px; padding: 30px 30px 0; box-sizing: border-box; background: url(../images/highBlack.png) repeat 0 0;}
-.highLights div h3{ font-size: 30px; margin-bottom: 18px; font-weight: normal;}
-.highLights div p{ font-size: 16px;}
+.highLights div h3{ height: 30px; overflow: hidden; font-size: 30px; margin-bottom: 18px; font-weight: normal;}
+.highLights div p{ font-size: 16px; height: 24px; overflow: hidden;}
 .playBtn{ display: block; position: absolute; cursor: pointer; width: 97px; height: 97px; top: 170px; left: 500px; background: url(../images/arrow.png) no-repeat -170px 0;}
 .highLights:hover .playBtn,.vogueQa div:hover .playBtn{ background-position: -170px -97px;}
 .highLights em{ width:108px; height: 32px; background: #000; line-height: 32px; color: #fff; font-size: 15px; text-align: center; position: absolute; top: 30px; right: -28px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px;}
@@ -55,22 +62,28 @@
 .fitingWrapper{ height: 1277px; background: url(../images/fittingBg.jpg) no-repeat center 0;}
 .fiting{ width: 1300px; margin: 0 auto; padding-top: 70px;}
 .fiting h2{ width: 343px; height: 81px; margin: 0 auto;}
-.fiting .swiper-pagination{ margin: 0 auto; position: relative; color: #fff;}
+.fiting h2.vogueQatit{ margin-top: 92px;}
+.fiting .swiper-pagination{ margin: 28px auto 0; position: relative; color: #fff;}
 .fiting .swiper-pagination span.swiper-pagination-bullet{ display: inline-block; font-size: 18px; cursor: pointer; margin-bottom: 36px; padding: 20px; _display: inline;}
 .fiting .swiper-pagination span.swiper-pagination-bullet:hover{ border-bottom: 5px solid #E60012;}
 .fiting .swiper-container{ width: 1300px;height: 820px;}
 .fiting .swiper-slide div{ float: left;}
 .fittingL{ margin: 40px 30px 0 0;}
-.fittingC { width: 355px;}
+.fittingC { width: 355px; margin-right: 30px;}
 .fittingC img{ margin-bottom: 110px;}
+
 .fiting .swiper-button-prev{ position: absolute; top: 325px; right: 0; left: auto; background: url(../images/arrow.png) no-repeat -110px -220px; margin-top: 0; width: 110px; height: 85px;}
-/*.fiting .swiper-button-prev:hover{ background: url(../images/arrow.png) no-repeat 0 -220px;}*/
+.fiting .swiper-button-prev:hover{ background: url(../images/arrow.png) no-repeat 0 -220px;}
 .fiting .swiper-button-next{ position: absolute; top: 410px; right: 0; left: auto; background: url(../images/arrow.png) no-repeat -110px -305px; margin-top: 0; width: 110px; height: 85px;}
+.fiting .swiper-button-next:hover{ background: url(../images/arrow.png) no-repeat 0 -305px;}
 .fiting .swiper-pagination-bullet{ width: auto; height: auto; opacity: 1; background: none; border-radius: 0;}
 .fiting .swiper-pagination-bullet-active{ border-bottom: 5px solid #E60012;}
 
-
-
+.fittingR{ margin-top: 325px;}
+.fittingText{ position: absolute; top: 85px; right: 0; width: 521px; height: 210px; color: #fff; background: url(../images/fittingText.png) repeat 0 0; padding: 35px 30px 0 35px; box-sizing: border-box;}
+.fittingText h3{ float: left; width: 330px; font-size: 40px; line-height: 40px; font-weight: normal; margin-bottom: 20px;}
+.fittingText a:link,.fittingText a:visited{ float: right; font-size: 19px; width: 122px; height: 34px; border: 1px solid #fff; color: #fff; line-height: 34px; text-align: center;}
+.fittingText p{ clear: both; font-size: 16px; line-height: 30px; height: 88px; overflow: hidden;}
 
 /*快问快答*/
 .vogueQa{ position: relative; width: 1300px; height: 469px; margin: 60px auto 50px;}
@@ -87,14 +100,14 @@
 .vogueQa ul li p img{ position: relative; top: 3px;}
 
  /*秀后派对*/
-.afterPartywrapper{ height: 811px; margin-bottom: 5px solid #e60013; background: url(../images/afterPartybg.jpg) no-repeat center 0;}
-.afterParty{ width: 1300px; margin: 0 auto; overflow: hidden;}
-.afterParty h2{ width: 343px; height: 81px; margin: 50px auto;}
+.afterPartywrapper{ height: 811px; border-bottom: 5px solid #e60013; background: url(../images/afterPartybg.jpg) no-repeat center 0;}
+.afterParty{ margin: 0 auto; overflow: hidden;}
+.afterParty h2{ width: 343px; height: 81px; margin: 50px auto 49px;}
 
 .street-tab,
 .street-content{
 	position: relative;
-	height: 690px;
+	height: 631px;
 	overflow: hidden;
 }
 .street-tab .abs-tab{
@@ -104,11 +117,11 @@
 	position: relative;
 	display: block;
 	float: left;
-	height: 690px;
+	height: 631px;
 }
 .street-tab img{
 	display: block;
-	height: 690px;
+	height: 631px;
 }
 
 
