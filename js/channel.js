@@ -1,3 +1,4 @@
+//秀场直击
 function scroll(scrollBox) {
     var speed = 10;
     var MyMar = null;
@@ -11,10 +12,10 @@ function scroll(scrollBox) {
     abs.width(w*2).append(abs.html());
 
     function Marquee() {
-        if (scrollBox.scrollLeft() >= w) {
-            scrollBox.scrollLeft(0);
+        if (scrollBox.scrollLeft() > 0) {
+            scrollBox.scrollLeft(scrollBox.scrollLeft() - 1);
         } else {
-            scrollBox.scrollLeft(scrollBox.scrollLeft() + 1);
+            scrollBox.scrollLeft(w);
         }
     }
     scrollBox.mouseenter(function() {
@@ -29,3 +30,12 @@ function scroll(scrollBox) {
 $('.street-content').each(function(index, el) {
     scroll($(this));    
 });
+
+//秀后派对
+$('.street-tab a').mouseenter(function(){
+	$(this).find('p').fadeIn();
+}).mouseleave(function(event) {
+    $(this).find('p').fadeOut();
+});
+
+

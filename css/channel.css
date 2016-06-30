@@ -19,7 +19,7 @@
 
 /*秀场直击*/
 .runwayWrapper{ height: 792px; margin-top: 60px;}
-.runway{ width: 1431px; margin: 0 auto; position: relative;}
+.runway{ width: 1300px; margin: 0 auto; position: relative;}
 .runway .swiper-container { width: 1300px;} 
 .runway .swiper-container li{ float: left;}
 .runway .swiper-container li img{ display: block; width: 260px; height: 396px;}
@@ -70,7 +70,10 @@
 .fiting .swiper-slide div{ float: left;}
 .fittingL{ margin: 40px 30px 0 0;}
 .fittingC { width: 355px; margin-right: 30px;}
-.fittingC img{ margin-bottom: 110px;}
+.fittingC img{ display: block; width: 355px; height: 355px; margin-bottom: 110px;}
+.fittingC a{ display: block; width: 355px; height: 355px; position: relative;}
+.fittingC a .playBtn{ top: 116px; left: 128px;}
+.fittingC a:hover .playBtn{ background-position: -170px -97px;}
 
 .fiting .swiper-button-prev{ position: absolute; top: 325px; right: 0; left: auto; background: url(../images/arrow.png) no-repeat -110px -220px; margin-top: 0; width: 110px; height: 85px;}
 .fiting .swiper-button-prev:hover{ background: url(../images/arrow.png) no-repeat 0 -220px;}
@@ -100,7 +103,7 @@
 .vogueQa ul li p img{ position: relative; top: 3px;}
 
  /*秀后派对*/
-.afterPartywrapper{ height: 811px; border-bottom: 5px solid #e60013; background: url(../images/afterPartybg.jpg) no-repeat center 0;}
+.afterPartywrapper{ height: 965px; background: #000 url(../images/afterPartybg.jpg) no-repeat center 0;}
 .afterParty{ margin: 0 auto; overflow: hidden;}
 .afterParty h2{ width: 343px; height: 81px; margin: 50px auto 49px;}
 
@@ -109,6 +112,7 @@
 	position: relative;
 	height: 631px;
 	overflow: hidden;
+	 border-bottom: 5px solid #e60013;
 }
 .street-tab .abs-tab{
 	position: absolute;
@@ -123,16 +127,18 @@
 	display: block;
 	height: 631px;
 }
+.street-tab a p{ display: none; position: absolute; width: 640px; height: 66px; line-height: 66px; text-align: center; background: #fff; color: #000; left: 50%; margin-left: -320px; bottom: 50px; font-size: 20px;}
 
-
-
-
-
-
-
-
-
-
+/*视频集合*/
+.afterParty .vogueVediotit{ margin-top: 67px;}
+.vogueVediowrapper{ height: 455px; background: #ececec; overflow: hidden;}
+.vogueVedio{ width: 1300px; margin: 60px auto 0; padding: 0 22px; box-sizing: border-box; overflow: hidden;}
+.vogueVedio li{ float: left; margin: 0 30px; width: 254px; overflow: hidden;}
+.vogueVedio li a{ display: block; width: 254px; height: 254px; position: relative; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; overflow: hidden;}
+.vogueVedio li a .playBtn{ width: 82px; height: 82px; top: 86px; left: 86px; background-position:-220px -302px;}
+.vogueVedio li a:hover .playBtn{ background-position: -220px -220px;}
+.vogueVedio li a p{ position: absolute; top: 0; left: 0; width: 254px; height: 254px; background: url(../images/vedioBg.png) repeat 0 0;}
+.vedioText{ font-size: 16px; width: 254px; text-align: center; margin-top: 30px;}
 
 
 
