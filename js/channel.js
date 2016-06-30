@@ -12,10 +12,10 @@ function scroll(scrollBox) {
     abs.width(w*2).append(abs.html());
 
     function Marquee() {
-        if (scrollBox.scrollLeft() > 0) {
-            scrollBox.scrollLeft(scrollBox.scrollLeft() - 1);
+        if (scrollBox.scrollLeft() > w) {
+            scrollBox.scrollLeft(0);
         } else {
-            scrollBox.scrollLeft(w);
+        	scrollBox.scrollLeft(scrollBox.scrollLeft() + 1);
         }
     }
     scrollBox.mouseenter(function() {
@@ -36,6 +36,64 @@ $('.street-tab a').mouseenter(function(){
 	$(this).find('p').fadeIn();
 }).mouseleave(function(event) {
     $(this).find('p').fadeOut();
+});
+
+// var mySwiper = new Swiper('.runway .swiper-container', {
+//     loop: true,
+//     nextButton: '.runway .swiper-button-next',
+//     prevButton: '.runway .swiper-button-prev'
+//  }); 
+
+var runwayContainer = $('.runway');
+// var swiper = runwayContainer.find('.swiper-container').swiper({
+//     speed: 500,
+//     loop: true,
+//     simulateTouch: false
+// });
+
+var swiper = new Swiper('.runway .swiper-container', {
+    speed: 500,
+    loop: true,
+    simulateTouch: false
+});
+
+runwayContainer.find('.swiper-button-prev').on('click', function(e){
+    e.preventDefault();
+    swiper.swipePrev();
+});
+
+runwayContainer.find('.swiper-button-next').on('click', function(e){
+    e.preventDefault();
+    swiper.swipeNext();
+});
+
+var fitting = $('.fiting');
+var mySwiper = new Swiper('.fiting .swiper-container',{
+    initialSlide: 3,
+    mode: 'vertical'
+    // pagination: '.fiting .swiper-pagination',
+    // paginationClickable: true
+    // 2.0尚不支持此方法
+    // paginationBulletRender: function (index, className) {
+    //     console.log('paginationBulletRender');
+    //     return '<span class="' + className + '">' + names[index] + '</span>';
+    // }
+});
+
+fitting.find('.swiper-pagination-bullet').on('click', function(e){
+    var index = fitting.find('.swiper-pagination-bullet').index(this);
+    mySwiper.swipeTo(index);
+    $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+});
+
+fitting.find('.swiper-button-prev').on('click', function(e){
+    e.preventDefault();
+    mySwiper.swipePrev();
+});
+
+fitting.find('.swiper-button-next').on('click', function(e){
+    e.preventDefault();
+    mySwiper.swipeNext();
 });
 
 
